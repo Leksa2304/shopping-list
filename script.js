@@ -43,3 +43,51 @@ function byEnter(event) {
 }
 
 input.addEventListener('keydown', byEnter);
+
+
+/* Зачеркиваются не все пункты, которые добавлены????
+const inputWrapper = document.querySelector('.input-wrapper'); //оболочка поля
+const input = document.querySelector('#input'); //поле ввода
+const itemsСontainer = document.querySelector('.items'); //контейнер для пунктов
+
+
+function newItem() {
+
+    const inputText = input.value;
+
+    const item = document.createElement('div');
+    item.classList.add('newGrocery');
+
+
+
+
+    item.textContent = inputText;
+
+    if (inputText != '') {
+
+        itemsСontainer.prepend(item);
+    }
+
+    input.value = '';
+
+    const grocery = document.querySelectorAll('.newGrocery');
+
+    for (let elem of grocery) {
+
+        elem.addEventListener('click', function() {
+            elem.classList.toggle('done');
+        });
+    }
+
+
+};
+
+
+function byEnter(event) {
+    if (event.key == 'Enter') {
+        newItem();
+    }
+}
+
+input.addEventListener('keydown', byEnter);
+*/
